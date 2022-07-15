@@ -1,7 +1,10 @@
 const express = require('express');
 const connectDatabase = require('./config/database')
 const sourceData = require('./config/sourceData')
+const presiRouter = require('./routers/presiRouter');
 const dotenv = require('dotenv');
+const userRouter = require('./routers/userRouter');
+const govRouter = require('./routers/governorRouter');
 
 const app = express()
 
@@ -18,6 +21,10 @@ dotenv.config();
 //connecting to extracting delection data from different source
 //sourceData();
 
+
+ app.use('/api/presidential', presiRouter);
+ app.use('/api/governors', govRouter);
+ app.use('/api/users', userRouter);
  app.get('/', (req, res) => {
    res.send('Server is ready');
  });
