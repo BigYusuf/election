@@ -26,7 +26,7 @@ dotenv.config();
  app.use('/api/governors', govRouter);
  app.use('/api/users', userRouter);
  app.get('/', (req, res) => {
-   res.send('Server is ready');
+   res.send(sourceData());
  });
 
 

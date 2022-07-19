@@ -11,10 +11,12 @@ const presidentialSchema = new mongoose.Schema(
             name: { type: String},
             iso1: { type: String},
             logo: { type: String},
-            chairman: { 
+            founded: { type: String},
+            chairperson: { 
                 name: String,
                 image: String,
                 age: Number,
+                gender: String,
             },
         },
         stateInfo: {
@@ -27,32 +29,34 @@ const presidentialSchema = new mongoose.Schema(
             lat: { type: Number, default: 0},
             long: { type: Number, default: 0},
             pvcholders: { type: Number, default: 0},
-            party: { type: String},
+            electedParty: { type: String},
             governor: { 
                 name: String,
                 image: String,
                 age: Number,
+                gender: String,
             },
             depGovernor: { 
                 name: String,
                 image: String,
                 age: Number,
+                gender: String,
             },
         },
         candidateInfo: {
             candidate: { 
                 name: String,
                 image: String,
-                sex: String,
+                gender: String,
                 age: Number,
-                post: String,
+                qualification: String,
             },
             runningMate: { 
                 name: String,
                 image: String,
-                sex: String,
+                gender: String,
                 age: Number,
-                post: String,
+                qualification: String,
             },
         },
         validVotes: { type: Number, default: 0},

@@ -1,32 +1,21 @@
-const express =require('express');
-const expressAsyncHandler = require('express-async-handler');
-const Governor =require('../models/governorModel')
+const express = require('express');
+const { AddNewGovernor, getAllGovernors, updateGovernor, deleteGovernor, getGovernor } = require('../controllers/governorController');
+const { isAuth, isAdmin } = require('../utils/utils');
 
 const govRouter = express.Router();
 
-govRouter.get('/', expressAsyncHandler(async (req, res) => {
-    const governor = await Governor.find({});
-      res.send(governor);      
-  })
-);
+// get all Governor
+govRouter.get('/', getAllGovernors);
 
-govRouter.post('/addgov', expressAsyncHandler(async (req, res) => {
-    const gov = new Governor({
-      party: req.body.party,
-      state: req.body.state,
-      type: req.body.type,
-      year: req.body.year,
-      PartyInfo: req.body.PartyInfo,
-      stateInfo: req.body.stateInfo,
-      candidateInfo: req.body.candidateInfo,
-      validVotes: req.body.validVotes,
-      invalidVotes: req.body.invalidVotes,
-      totalVotes: req.body.totalVotes,
-    });
-    const createdGov = await gov.save();
-      res.status(200).send(
-        { 
-            message: 'Governor Created', Governor_Election: createdGov });
-  })
-)
+// get single Governor
+govRouter.get('/:id', getGovernor);
+
+govRouter.post('/addgov', isAuth, isAdmin, AddNewGovernor)
+
+// update Governor
+govRouter.put('/:id', isAuth, isAdmin,updateGovernor);
+  
+  // delete governor
+govRouter.delete('/:id', isAuth, isAdmin, deleteGovernor);
+  
 module.exports = govRouter;
