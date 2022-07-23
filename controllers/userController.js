@@ -1,9 +1,17 @@
 
 const expressAsyncHandler = require('express-async-handler');
 const User = require('../models/userModel')
-const {generateToken} =require('../utils/utils')
+const {generateToken} =require('../middleware/Auth')
 const bcrypt = require('bcryptjs'); 
 const data = require('../data.js');
+
+exports.seedData = expressAsyncHandler(async (req, res) => {
+    //if you want to remove all your users before inserting many, do this befor created users
+   // await User.remove({});
+
+    const createdUsers = await User.insertMany(data.users);
+    res.send({ createdUsers});
+})
 
 exports.getAllUsers = expressAsyncHandler(async (req, res) => {
     const users = await User.find({});

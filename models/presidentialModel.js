@@ -1,49 +1,42 @@
-const express = require('express')
 const mongoose = require('mongoose')
 
 const presidentialSchema = new mongoose.Schema(
     {
-        party: {type: String, required: true, unique: true},
-        state: {type: String, required: true, unique: true},
+        party: {type: String, required: true},
+        state: {type: String, required: true},
         year: {type: String, required: true},
-        type: {type: String, required: true},        
+        type: {type: String, required: true},
+        vote: {type: Number, required: true},
         partyInfo: {
             name: { type: String},
-            iso1: { type: String},
+            iso: { type: String},
             logo: { type: String},
             founded: { type: String},
-            chairperson: { 
-                name: String,
-                image: String,
-                age: Number,
-                gender: String,
-            },
+            totalVotesByParty: { type: Number},
         },
         stateInfo: {
             name: { type: String},
             logo: { type: String},
             lga: { type: Number, default: 0},
             population: { type: Number, default: 0},
-            iso1: { type: String},
-            iso2: { type: String},
+            iso: { type: String},
             lat: { type: Number, default: 0},
             long: { type: Number, default: 0},
-            pvcholders: { type: Number, default: 0},
-            electedParty: { type: String},
-            governor: { 
-                name: String,
-                image: String,
-                age: Number,
-                gender: String,
-            },
-            depGovernor: { 
-                name: String,
-                image: String,
-                age: Number,
-                gender: String,
+            registeredVoters: { type: Number, default: 0},
+            accreditedVoters: { type: Number, default: 0},
+            totalvalidVotes: { type: Number, default: 0},
+            rejectedVotes: { type: Number, default: 0},
+            totalVotes: { type: Number, default: 0},
+            accreditedVoters: { type: Number, default: 0},
+            canceledVotes: { 
+                totalAffectedLG: String,
+                totalAffectedPollingUnits: Number,
+                totalAffectedVoters: Number,
+                reasons: String,
             },
         },
         candidateInfo: {
+            party: String,
             candidate: { 
                 name: String,
                 image: String,
@@ -59,9 +52,6 @@ const presidentialSchema = new mongoose.Schema(
                 qualification: String,
             },
         },
-        validVotes: { type: Number, default: 0},
-        invalidVotes: { type: Number, default: 0},
-        totalVotes: { type: Number, default: 0},
     },
     {
         timestamps: true,

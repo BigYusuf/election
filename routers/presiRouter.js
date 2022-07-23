@@ -1,8 +1,11 @@
 const express = require('express');
-const { deletePresi, getAllPresi, addNewPresi, updatePresi, getPresi } = require('../controllers/presiController');
-const { isAdmin, isAuth } = require('../utils/utils');
+const { deletePresi, getAllPresi, addNewPresi, updatePresi, getPresi, seedData } = require('../controllers/presiController');
+const { isAdmin, isAuth } = require('../middleware/Auth');
 
 const presiRouter = express.Router();
+
+//add many presidents data from json 
+presiRouter.get('/seed', seedData);
 
 //get all presidents
 presiRouter.get('/', getAllPresi);

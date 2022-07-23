@@ -1,7 +1,15 @@
 
 const expressAsyncHandler = require('express-async-handler');
 const Governor =require('../models/governorModel');
+const data = require('../data.js');
 
+exports.seedData = expressAsyncHandler(async (req, res) => {
+    //if you want to remove all your users before inserting many, do this befor created users
+   // await Governor.remove({});
+
+    //const createdGov = await User.insertMany(data.governor);
+   // res.send({ createdGov});
+})
 exports.AddNewGovernor = expressAsyncHandler(async (req, res) => {
     const gov = new Governor({
       party: req.body.party,
@@ -18,7 +26,7 @@ exports.AddNewGovernor = expressAsyncHandler(async (req, res) => {
     const createdGov = await gov.save();
       res.status(200).send(
         { message: 'New Governor Created', Governor_Election: createdGov });
-  })
+})
 
 exports.getAllGovernors = expressAsyncHandler(async (req, res) => {
 const governor = await Governor.find({});
