@@ -35,9 +35,6 @@ exports.addNewPresi = expressAsyncHandler(async (req, res) => {
       partyInfo: req.body.partyInfo,
       stateInfo: req.body.stateInfo,
       candidateInfo: req.body.candidateInfo,
-      validVotes: req.body.validVotes,
-      invalidVotes: req.body.invalidVotes,
-      totalVotes: req.body.totalVotes,
     });
     const createdPresi = await presi.save();
       res.status(200).send(

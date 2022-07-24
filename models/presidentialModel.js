@@ -12,7 +12,6 @@ const presidentialSchema = new mongoose.Schema(
             iso: { type: String},
             logo: { type: String},
             founded: { type: String},
-            totalVotesByParty: { type: Number},
         },
         stateInfo: {
             name: { type: String},
@@ -27,7 +26,6 @@ const presidentialSchema = new mongoose.Schema(
             totalvalidVotes: { type: Number, default: 0},
             rejectedVotes: { type: Number, default: 0},
             totalVotes: { type: Number, default: 0},
-            accreditedVoters: { type: Number, default: 0},
             canceledVotes: { 
                 totalAffectedLG: String,
                 totalAffectedPollingUnits: Number,
