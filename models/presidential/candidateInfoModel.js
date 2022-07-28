@@ -5,6 +5,12 @@ const candidateInfoSchema = new mongoose.Schema(
         party: String,
         year: String,
         type: String,
+        partyInfo: {
+            name: { type: String},
+            iso: { type: String},
+            logo: { type: String},
+            founded: { type: String},
+        },
         candidate: { 
             name: String,
             image: String,

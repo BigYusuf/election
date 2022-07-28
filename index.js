@@ -5,6 +5,8 @@ const presiRouter = require('./routers/presiRouter');
 const dotenv = require('dotenv');
 const userRouter = require('./routers/userRouter');
 const govRouter = require('./routers/governorRouter');
+const presiCandidateRouter = require('./routers/presiCandidateRouter');
+const presiStateRouter = require('./routers/presiStateRouter');
 
 const app = express()
 
@@ -21,10 +23,12 @@ dotenv.config();
 //connecting to extracting delection data from different source
 //sourceData();
 
-
+//presidential election 
  app.use('/api/presidential', presiRouter);
- app.use('/api/governors', govRouter);
  app.use('/api/users', userRouter);
+ app.use('/api/2019/presidential/candidates', presiCandidateRouter);
+ app.use('/api/2019/presidential/stateinfo', presiStateRouter);
+ //app.use('/api/governors', govRouter);
  app.get('/', (req, res) => {
    res.send(sourceData());
  });

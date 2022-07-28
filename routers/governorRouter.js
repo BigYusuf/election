@@ -1,11 +1,11 @@
 const express = require('express');
-const { AddNewGovernor, getAllGovernors, updateGovernor, deleteGovernor, getGovernor, seedData } = require('../controllers/governorController');
+const { AddNewGovernor, getAllGovernors, updateGovernor, deleteGovernor, getGovernor, seedDataGov } = require('../controllers/governorController');
 const { isAuth, isAdmin } = require('../middleware/Auth');
 
 const govRouter = express.Router();
 
 //add many presidents data from json 
-govRouter.get('/seed', seedData);
+govRouter.get('/seed', seedDataGov);
 
 // get all Governor
 govRouter.get('/', getAllGovernors);

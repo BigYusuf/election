@@ -1,14 +1,14 @@
 
 const expressAsyncHandler = require('express-async-handler');
-const Presidential =require('../models/presidentialModel');
-const data = require('../data.js');
+const Presidential =require('../models/presidential/presidentialModel');
+const electionData = require('../data/presidential/electionData2019');
 
-exports.seedData = expressAsyncHandler(async (req, res) => {
+exports.seedDataPresi = expressAsyncHandler(async (req, res) => {
     //if you want to remove all your users before inserting many, do this befor created users
-   // await Presidential.remove({});
+    await Presidential.remove({});
 
-    //const createdPresi = await User.insertMany(data.president);
-   // res.send({ createdPresi});
+    const createdPresi = await Presidential.insertMany(electionData.election2019);
+    res.send({ createdPresi});
 })
 
 exports.getAllPresi = expressAsyncHandler(async (req, res) => {
@@ -27,14 +27,10 @@ exports.getPresi = expressAsyncHandler(async (req, res) => {
 
 exports.addNewPresi = expressAsyncHandler(async (req, res) => {
     const presi = new Presidential({
-      party: req.body.party,
       state: req.body.state,
       type: req.body.type,
       year: req.body.year,
-      vote: req.body.vote,
-      partyInfo: req.body.partyInfo,
       stateInfo: req.body.stateInfo,
-      candidateInfo: req.body.candidateInfo,
     });
     const createdPresi = await presi.save();
       res.status(200).send(

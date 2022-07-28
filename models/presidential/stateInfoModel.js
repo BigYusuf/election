@@ -2,7 +2,8 @@ const mongoose = require('mongoose')
 
 const stateInfoSchema = new mongoose.Schema(
     {    
-        name: { type: String},
+        state: { type: String},
+        capital: { type: String},
         electionType: { type: String},
         logo: { type: String},
         lga: { type: Number, default: 0},
@@ -12,15 +13,15 @@ const stateInfoSchema = new mongoose.Schema(
         long: { type: Number, default: 0},
         registeredVoters: { type: Number, default: 0},
         accreditedVoters: { type: Number, default: 0},
-        totalvalidVotes: { type: Number, default: 0},
+        totalValidVotes: { type: Number, default: 0},
         rejectedVotes: { type: Number, default: 0},
-        totalVotes: { type: Number, default: 0},
+        totalCastedVotes: { type: Number, default: 0},
         canceledVotes: { 
             totalAffectedLG: String,
             totalAffectedPollingUnits: Number,
             totalAffectedVoters: Number,
-            reasons: String,
-        },       
+            reasonsForCancel: String,
+        },
     },
     {
         timestamps: true,

@@ -1,17 +1,17 @@
 const express = require('express');
-const { deletePresi, getAllPresi, addNewPresi, updatePresi, getPresi, seedData } = require('../controllers/presiController');
+const { deletePresi, getAllPresi, addNewPresi, updatePresi, getPresi, seedDataPresi } = require('../controllers/presiController');
 const { isAdmin, isAuth } = require('../middleware/Auth');
 
 const presiRouter = express.Router();
 
 //add many presidents data from json 
-presiRouter.get('/seed', seedData);
+presiRouter.get('/seed', seedDataPresi);
 
 //get all presidents
 presiRouter.get('/', getAllPresi);
 
 //get single president
-presiRouter.get('/', getPresi);
+presiRouter.get('/:id', getPresi);
 
 presiRouter.post('/addpresi', isAuth, isAdmin, addNewPresi)
 

@@ -1,12 +1,12 @@
 
 const express = require('express');
 const { isAdmin, isAuth} = require('../middleware/Auth')
-const { addNewUser, getUser, getAllUsers, deleteUser, updateUser, updateAdminUser, loginUser, seedData } = require('../controllers/userController');
+const { addNewUser, getUser, getAllUsers, deleteUser, updateUser, updateAdminUser, loginUser, seedUserData } = require('../controllers/userController');
 
 const userRouter = express.Router();
 
 //add many user data from json 
-userRouter.get('/seed', seedData);
+userRouter.get('/seed', seedUserData);
 
 // user login
 userRouter.post('/login', loginUser);
