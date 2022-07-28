@@ -17,16 +17,15 @@ const rateLimiter = require('express-rate-limit');
 const app = express()
 
 app.set('trust proxy', 1);
-app.use(rateLimiter({
-  windowMs: 15 * 60 * 1000, // 15 only minutes
-  max: 100, // limit each IP to 100 requests per windowMs
-}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
 app.use(cors());
 app.use(xss());
-
+app.use(rateLimiter({
+  windowMs: 60 * 1000, 
+  max: 60, // limit each IP to 60 requests per windowMs
+}));
 
 
 //connecting to Database
@@ -45,7 +44,8 @@ dotenv.config();
  app.use('/api/2019/presidential/stateinfo', presiStateRouter);
  //app.use('/api/governors', govRouter);
  app.get('/', (req, res) => {
-   res.send(sourceData());
+   res.send('Nigeria Election API');
+   //res.send(sourceData());
  });
 
 
