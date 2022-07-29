@@ -1,7 +1,7 @@
 {
   "name": "election-api",
   "version": "1.0.0",
-  "description": "election api",
+  "description": "This an api for Nigerian election, which will ccommprise of presidential, governorship, house of representative, and senate",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
