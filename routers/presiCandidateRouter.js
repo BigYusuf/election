@@ -11,7 +11,7 @@ presiCandidateRouter.get('/seed', seedCandidateData);
 presiCandidateRouter.get('/', getAllCandidate);
 
 //get single candidate
-presiCandidateRouter.get('/', getCandidate);
+presiCandidateRouter.get('/:id', getCandidate);
 
 presiCandidateRouter.post('/addpresi', isAuth, isAdmin, addNewCandidate)
 
