@@ -1,5 +1,5 @@
 const express = require('express');
-const { deletePresi, getAllPresi, addNewPresi, updatePresi, getPresi, seedDataPresi } = require('../controllers/presiController');
+const { deletePresi, getAllPresi, addNewPresi, updatePresi, getPresi, seedDataPresi } = require('../controllers/presidential/2019/presiController');
 const { isAdmin, isAuth } = require('../middleware/Auth');
 
 const presiRouter = express.Router();

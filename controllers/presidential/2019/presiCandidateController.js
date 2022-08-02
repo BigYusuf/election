@@ -1,7 +1,7 @@
 
 const expressAsyncHandler = require('express-async-handler');
-const CandidateInfo =require('../models/presidential/candidateInfoModel');
-const candidateData = require('../data/presidential/candidate_presidential2019');
+const CandidateInfo =require('../../../models/presidential/2019/candidateInfoModel');
+const candidateData = require('../../../data/presidential/candidate_presidential2019');
 
 exports.seedCandidateData = expressAsyncHandler(async (req, res) => {
     //if you want to remove all your users before inserting many, do this befor created users

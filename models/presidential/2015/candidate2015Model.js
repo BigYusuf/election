@@ -1,10 +1,11 @@
 const mongoose = require('mongoose')
 
-const candidateInfoSchema = new mongoose.Schema(
+const candidate2015Schema = new mongoose.Schema(
     {    
         party: String,
         year: String,
         type: String,
+        votes: Number,
         partyInfo: {
             name: { type: String},
             iso: { type: String},
@@ -24,13 +25,13 @@ const candidateInfoSchema = new mongoose.Schema(
             gender: String,
             age: Number,
             qualification: String,
-        },      
+        },
     },
     {
         timestamps: true,
     }
 )
 
-const CandidateInfo = mongoose.model('CandidateInfo', candidateInfoSchema);
+const Candidate2015 = mongoose.model('Candidate2015', candidate2015Schema);
 
-module.exports = CandidateInfo;
+module.exports = Candidate2015;

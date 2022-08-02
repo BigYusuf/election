@@ -1,32 +1,32 @@
 
 const expressAsyncHandler = require('express-async-handler');
-const Presidential =require('../models/presidential/presidentialModel');
-const electionData = require('../data/presidential/electionData2019');
+const Presidential2015 = require('../../../models/presidential/2015/presi2015Model');
+const electionData = require('../../../data/presidential/electionData2015');
 
 exports.seedDataPresi = expressAsyncHandler(async (req, res) => {
     //if you want to remove all your users before inserting many, do this befor created users
-    await Presidential.remove({});
+    await Presidential2015.remove({});
 
-    const createdPresi = await Presidential.insertMany(electionData.election2019);
+    const createdPresi = await Presidential2015.insertMany(electionData.election2019);
     res.send({ createdPresi});
 })
 
 exports.getAllPresi = expressAsyncHandler(async (req, res) => {
-    const president = await Presidential.find({});
+    const president = await Presidential2015.find({});
       res.send(president);      
 })
 
 exports.getPresi = expressAsyncHandler(async (req, res) => {
-    const presi = await Presidential.findById(req.params.id);
+    const presi = await Presidential2015.findById(req.params.id);
     if (presi) {
       res.send(presi);
     } else {
-      res.status(404).send({ message: 'President Not Found' });
+      res.status(404).send({ message: 'State data Not Found' });
     }
 })
 
 exports.addNewPresi = expressAsyncHandler(async (req, res) => {
-    const presi = new Presidential({
+    const presi = new Presidential2015({
       state: req.body.state,
       type: req.body.type,
       year: req.body.year,
@@ -35,13 +35,13 @@ exports.addNewPresi = expressAsyncHandler(async (req, res) => {
     const createdPresi = await presi.save();
       res.status(200).send(
         {
-            message: 'Presi Created', Presidential_Election: createdPresi 
+            message: 'State data(president) Created', Presidential2015_Election: createdPresi 
         });
 })
 
 exports.updatePresi = expressAsyncHandler(async (req, res) => {
     const presidentId = req.params.id;
-    const president = await Presidential.findById(presidentId);
+    const president = await Presidential2015.findById(presidentId);
     
       if(president) {
         president.party = req.body.party;
@@ -56,19 +56,19 @@ exports.updatePresi = expressAsyncHandler(async (req, res) => {
         president.totalVotes = req.body.totalVotes;
         
         const updatedPresident = await president.save();
-        res.send({ message: 'President Updated', president: updatedPresident });
+        res.send({ message: 'State data(president) Updated', president: updatedPresident });
       }else{
-        res.status(404).send({ message: 'President Not Found' })
+        res.status(404).send({ message: 'State data Not Found' })
       }
 })
 
 exports.deletePresi = expressAsyncHandler(async (req, res) => {
     const presidentId = req.params.id;
-    const president = await Presidential.findById(presidentId);
+    const president = await Presidential2015.findById(presidentId);
     if(president) {
         const deletePresident = await president.remove(); 
-        res.send({ message: 'President Deleted', president: deletePresident });
+        res.send({ message: 'State data(president) Deleted', president: deletePresident });
     }else{
-      res.status(404).send({ message: 'President Not Found' })
+      res.status(404).send({ message: 'State data Not Found' })
     }
 })

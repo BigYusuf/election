@@ -12,8 +12,10 @@ const presidentialSchema = new mongoose.Schema(
             iso: { type: String},
             lga: { type: Number, default: 0},
             population: { type: Number, default: 0},
-            lat: { type: Number, default: 0},
-            long: { type: Number, default: 0},
+            geo: {
+                lat: { type: Number, default: 0},
+                long: { type: Number, default: 0}
+            },
             registeredVoters: { type: Number, default: 0},
             accreditedVoters: { type: Number, default: 0},
             vote: {type: Object, required: true},

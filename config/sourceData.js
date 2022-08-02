@@ -1,8 +1,9 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const sourceData = () => {
-    const url = 'https://www.channelstv.com/'
+const sourceData = (url, contentName) => {
+   //  url = 'https://www.channelstv.com/'
+     //contentName = '.vid_title'
 axios(url)
 .then(response => {
     const html = response.data
@@ -10,7 +11,7 @@ axios(url)
     //lets use cheerio to select the data from the website
     const data = cheerio.load(html)
     const articles = []
-    data('.vid_title', html).each(function() {
+    data(`.${contentName}`, html).each(function() {
         const title = data(this).text()
         const mainUrl = data(this).find('a').attr('href')
         articles.push({
@@ -19,6 +20,7 @@ axios(url)
         })
     })
     console.log(articles)
+    return articles
 }).catch(err => console.log(err))
 
 }
