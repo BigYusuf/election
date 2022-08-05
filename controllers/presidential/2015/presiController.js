@@ -1,13 +1,13 @@
 
 const expressAsyncHandler = require('express-async-handler');
-const Presidential2015 = require('../../../models/presidential/2015/presi2015Model');
+const Presidential2015 = require('../../../models/presidential/presi2015Model');
 const electionData = require('../../../data/presidential/electionData2015');
 
 exports.seedDataPresi = expressAsyncHandler(async (req, res) => {
     //if you want to remove all your users before inserting many, do this befor created users
     await Presidential2015.remove({});
 
-    const createdPresi = await Presidential2015.insertMany(electionData.election2019);
+    const createdPresi = await Presidential2015.insertMany(electionData.election2015);
     res.send({ createdPresi});
 })
 

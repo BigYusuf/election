@@ -1,6 +1,6 @@
 
 const expressAsyncHandler = require('express-async-handler');
-const Presidential = require('../../../models/presidential/2019/presidentialModel');
+const Presidential = require('../../../models/presidential/presidentialModel');
 const electionData = require('../../../data/presidential/electionData2019');
 
 exports.seedDataPresi = expressAsyncHandler(async (req, res) => {
