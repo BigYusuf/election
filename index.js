@@ -38,8 +38,8 @@ app.use('/api/users', userRouter);
 //presidential election 
  app.use('/api/2019/presidential', presiRouter);
  app.use('/api/2015/presidential', presi2015Router);
- app.use('/api/2019/presidential/candidates', presiCandidateRouter);
- app.use('/api/2015/presidential/candidates', presiCandidate2015Router);
+ app.use('/api/2019/presidential-candidates', presiCandidateRouter);
+ app.use('/api/2015/presidential-candidates', presiCandidate2015Router);
  app.use('/api/2019/presidential/stateinfo', presiStateRouter);
  //app.use('/api/governors', govRouter);
  app.get('/', (req, res) => {
