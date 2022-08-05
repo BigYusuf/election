@@ -32,7 +32,8 @@ dotenv.config();
 
 //connecting to extracting delection data from different source
 //sourceData();
-//users
+
+// admin users
 app.use('/api/users', userRouter);
 //presidential election 
  app.use('/api/2019/presidential', presiRouter);
