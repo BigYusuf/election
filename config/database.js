@@ -12,7 +12,8 @@ const connectDatabase = () => {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     }).then((con)=> {
-        console.log(`DB Connection Successful to HOST: ${con.connection.host}`)
+      //  console.log(`DB Connection Successful to HOST: ${con.connection.host}`)
+        console.log(`Database Connected`)
     })
     .catch((err)=>console.log(err))
 }
