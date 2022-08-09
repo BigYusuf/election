@@ -11,14 +11,13 @@ const presidential2015Schema = new mongoose.Schema(
             logo: { type: String},
             iso: { type: String},
             lga: { type: Number, default: 0},
-            population: { type: Number, default: 0},
             geo: {
                 lat: { type: Number, default: 0},
                 long: { type: Number, default: 0}
             },
             registeredVoters: { type: Number, default: 0},
             accreditedVoters: { type: Number, default: 0},
-            vote: {type: Object, required: true},
+            vote: {type: Array, required: true},
             totalvalidVotes: { type: Number, default: 0},
             rejectedVotes: { type: Number, default: 0},
             totalVotes: { type: Number, default: 0},
