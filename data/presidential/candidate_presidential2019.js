@@ -24,7 +24,8 @@ const candidateData = {
                 "age": 33,
                 "gender": "M",
                 "qualifiation": "FSLC, BSc, NECO"
-            }
+            },
+            "votes": 19219,
         },
         {
             "party": "AA",
@@ -48,7 +49,8 @@ const candidateData = {
                 "age": 49,
                 "gender": "F",
                 "qualifiation": "LLB"
-            }
+            },
+            "votes": 14380
         },
         {
             "party": "AAC",
@@ -70,7 +72,8 @@ const candidateData = {
             "age": 42,
             "gender": "M",
             "qualifiation": "MBBS, MPH"
-        }
+        },
+            "votes":33953
         },
         {
             "party": "AAP",
@@ -92,7 +95,8 @@ const candidateData = {
             "age": 47,
             "gender": "F",
             "qualifiation": "FSLC, BA, SSCE"
-        }
+        },
+            "votes": 8902
         },
         {
             "party": "ABP",
@@ -114,7 +118,8 @@ const candidateData = {
             "age": 44,
             "gender": "F",
             "qualifiation": "BSc"
-        }
+        },
+            "votes": 4523
         },
         {
             "party": "ACD",
@@ -136,7 +141,8 @@ const candidateData = {
             "age": 65,
             "gender": "M",
             "qualifiation": "FSLC, BSc, WAEC"
-        }
+        },
+            "votes": 11325
         },
         {
             "party": "ACPN",
@@ -158,7 +164,8 @@ const candidateData = {
             "age": 54,
             "gender": "M",
             "qualifiation": "HDPA"
-        }
+        },
+            "votes": 7223
         },
         {
             "party": "ADC",
@@ -180,7 +187,8 @@ const candidateData = {
             "age": 65,
             "gender": "M",
             "qualifiation": "FSLC, BEd, PHD"
-        }
+        },
+            "votes": 97874
         },
         {
             "party": "ADP",
@@ -205,7 +213,8 @@ const candidateData = {
                 "age": 60,
                 "gender": "M",
                 "qualifiation": "FSLC, WAEC"
-            }
+            },
+            "votes": 54930
         },
         {
             "party": "AGA",
@@ -227,7 +236,8 @@ const candidateData = {
             "age": 39,
             "gender": "F",
             "qualifiation": "SSCE, BL, PGD"
-        }
+        },
+            "votes": 4689
         },
         {
             "party": "AGAP",
@@ -249,7 +259,8 @@ const candidateData = {
             "age": 43,
             "gender": "M",
             "qualifiation": "SSCE"
-        }
+        },
+            "votes": 3071
         },
         {
             "party": "ANDP",
@@ -271,7 +282,8 @@ const candidateData = {
             "age": 54,
             "gender": "M",
             "qualifiation": "FSLC, WAEC, BSC"
-        }
+        },
+            "votes": 3104
         },
         {
             "party": "ANN",
@@ -293,7 +305,8 @@ const candidateData = {
             "age": 44,
             "gender": "F",
             "qualifiation": "FSLC, SSCE, LLB, BL, MA"
-        }
+        },
+            "votes": 16779
         },
         {
             "party": "ANP",
@@ -315,7 +328,8 @@ const candidateData = {
             "age": 43,
             "gender": "F",
             "qualifiation": "WAEC"
-        }
+        },
+            "votes": 3586
         },
         {
             "party": "ANRP",
@@ -337,7 +351,8 @@ const candidateData = {
             "age": 42,
             "gender": "M",
             "qualifiation": "SSCE, BSc"
-        }
+        },
+            "votes": 4340
         },
         {
             "party": "APA",
@@ -359,7 +374,8 @@ const candidateData = {
             "age": 58,
             "gender": "M",
             "qualifiation": "HND, PGD"
-        }
+        },
+            "votes": 36866
         },
         {
             "party": "APC",
@@ -381,7 +397,8 @@ const candidateData = {
             "age": 61,
             "gender": "M",
             "qualifiation": "FSLC, WASC O&amp;A, LLB"
-        }
+        },
+            "votes": 15191847
         },
         {
             "party": "APDA",
@@ -403,7 +420,8 @@ const candidateData = {
             "age": 53,
             "gender": "F",
             "qualifiation": "MSc, PHD"
-        }
+        },
+            "votes": 26558
         },
         {
             "party": "APGA",
@@ -425,7 +443,8 @@ const candidateData = {
             "age": 61,
             "gender": "M",
             "qualifiation": "FSLC, BSc, WASC"
-        }
+        },
+            "votes": 66851
         },
         {
             "party": "APM",
@@ -447,7 +466,8 @@ const candidateData = {
             "age": 43,
             "gender": "M",
             "qualifiation": "FSLC, SSCE, BSc"
-        }
+        },
+            "votes": 26039
         },
         {
             "party": "APP",
@@ -469,7 +489,8 @@ const candidateData = {
             "age": 39,
             "gender": "M",
             "qualifiation": "FSLC"
-        }
+        },
+            "votes": 3585
         },
         {
             "party": "ASD",
@@ -491,7 +512,8 @@ const candidateData = {
             "age": 60,
             "gender": "M",
             "qualifiation": "WASC, DIPLOMA"
-        }
+        },
+            "votes": 2146
         },
         {
             "party": "AUN",
@@ -513,7 +535,8 @@ const candidateData = {
             "age": 40,
             "gender": "M",
             "qualifiation": "FSLC, BA, WAEC, NECO"
-        }
+        },
+            "votes": 1092
         },
         {
             "party": "BNPP",
@@ -535,7 +558,8 @@ const candidateData = {
             "age": 39,
             "gender": "F",
             "qualifiation": "WAEC, BSc, PGD"
-        }
+        },
+            "votes": 1649
         },
         {
             "party": "CC",
@@ -557,7 +581,8 @@ const candidateData = {
             "age": 43,
             "gender": "M",
             "qualifiation": "FSLC, NCE"
-        }
+        },
+            "votes": 2391
         },
         {
             "party": "CAP",
@@ -579,7 +604,8 @@ const candidateData = {
             "age": 43,
             "gender": "M",
             "qualifiation": "FSLC, BSc, WAEC"
-        }
+        },
+            "votes": 1111
         },
         {
             "party": "CNP",
@@ -601,7 +627,8 @@ const candidateData = {
             "age": 39,
             "gender": "F",
             "qualifiation": "WASC, NCE"
-        }
+        },
+            "votes": 1874
         },
         {
             "party": "DA",
@@ -623,7 +650,8 @@ const candidateData = {
             "age": 37,
             "gender": "M",
             "qualifiation": "WASC, HND"
-        }
+        },
+            "votes": 2769
         },
         {
             "party": "DPC",
@@ -645,7 +673,8 @@ const candidateData = {
             "age": 46,
             "gender": "F",
             "qualifiation": "FSLC, SSCE, BSc, OND"
-        }
+        },
+            "votes": 5242
         },
         {
             "party": "DPP",
@@ -667,7 +696,8 @@ const candidateData = {
             "age": 42,
             "gender": "M",
             "qualifiation": "FSLC, SSCE"
-        }
+        },
+            "votes": 14483
         },
         {
             "party": "FJP",
@@ -689,7 +719,8 @@ const candidateData = {
             "age": 64,
             "gender": "M",
             "qualifiation": "OND, HND"
-        }
+        },
+            "votes": 4554
         },
         {
             "party": "FRESH",
@@ -711,7 +742,8 @@ const candidateData = {
             "age": 57,
             "gender": "M",
             "qualifiation": "BA, WASC"
-        }
+        },
+            "votes": 4174
         },
         {
             "party": "GDPN",
@@ -733,7 +765,8 @@ const candidateData = {
             "age": 56,
             "gender": "M",
             "qualifiation": "FSLC, WAEC, BA"
-        }
+        },
+            "votes": 41852
         },
         {
             "party": "GPN",
@@ -755,7 +788,8 @@ const candidateData = {
             "age": 42,
             "gender": "F",
             "qualifiation": "HND"
-        }
+        },
+            "votes": 4924
         },
         {
             "party": "HDP",
@@ -777,7 +811,8 @@ const candidateData = {
             "age": 42,
             "gender": "M",
             "qualifiation": "FSLC, SSCE, ND, HND"
-        }
+        },
+            "votes": 1663
         },
         {
             "party": "ID",
@@ -799,7 +834,8 @@ const candidateData = {
             "age": 41,
             "gender": "M",
             "qualifiation": "WASC"
-        }
+        },
+            "votes": 1845
         },
         {
             "party": "JMPP",
@@ -821,7 +857,8 @@ const candidateData = {
             "age": 44,
             "gender": "M",
             "qualifiation": "FSLC, ND"
-        }
+        },
+            "votes": 1853
         },
         {
             "party": "KP",
@@ -843,7 +880,8 @@ const candidateData = {
             "age": 54,
             "gender": "F",
             "qualifiation": "FSLC, BA, GCE, PHD"
-        }
+        },
+            "votes": 1911
         },
         {
             "party": "LM",
@@ -865,7 +903,8 @@ const candidateData = {
             "age": 35,
             "gender": "F",
             "qualifiation": "FSLC, BTech, SSCE"
-        }
+        },
+            "votes": 1438
         },
         {
             "party": "LP",
@@ -887,7 +926,8 @@ const candidateData = {
             "age": 42,
             "gender": "M",
             "qualifiation": "FSLC, WAEC"
-        }
+        },
+            "votes": 5074
         },
         {
             "party": "MAJA",
@@ -909,7 +949,8 @@ const candidateData = {
             "age": 43,
             "gender": "M",
             "qualifiation": "BA"
-        }
+        },
+            "votes": 2651
         },
         {
             "party": "MMN",
@@ -931,7 +972,8 @@ const candidateData = {
             "age": 35,
             "gender": "F",
             "qualifiation": "FSLC, SSCE, HND"
-        }
+        },
+            "votes": 14540
         },
         {
             "party": "MPN",
@@ -953,7 +995,8 @@ const candidateData = {
             "age": 45,
             "gender": "F",
             "qualifiation": "NCE"
-        }
+        },
+            "votes": 2752
         },
         {
             "party": "NAC",
@@ -975,7 +1018,8 @@ const candidateData = {
             "age": 44,
             "gender": "M",
             "qualifiation": "LLB"
-        }
+        },
+            "votes": 2279
         },
         {
             "party": "NCMP",
@@ -997,7 +1041,8 @@ const candidateData = {
             "age": 51,
             "gender": "F",
             "qualifiation": "FSLC, NECO, GCE, DIPLOMA, BSc"
-        }
+        },
+            "votes": 1378
         },
         {
             "party": "NCP",
@@ -1019,7 +1064,8 @@ const candidateData = {
             "age": 53,
             "gender": "F",
             "qualifiation": "WAEC, AL, OL, PS"
-        }
+        },
+            "votes": 3799
         },
         {
             "party": "NDCP",
@@ -1041,7 +1087,8 @@ const candidateData = {
             "age": 51,
             "gender": "M",
             "qualifiation": "FSLC, NCE, MSc"
-        }
+        },
+            "votes": 1192
         },
         {
             "party": "NDLP",
@@ -1063,7 +1110,8 @@ const candidateData = {
             "age": 49,
             "gender": "M",
             "qualifiation": "FSLC, WAEC, DIPLOMA"
-        }
+        },
+            "votes": 1588
         },
         {
             "party": "NEPP",
@@ -1085,7 +1133,8 @@ const candidateData = {
             "age": 46,
             "gender": "M",
             "qualifiation": "FSLC, BA, SSCE, OND"
-        }
+        },
+            "votes": 1524
         },
         {
             "party": "NFD",
@@ -1107,7 +1156,8 @@ const candidateData = {
             "age": 41,
             "gender": "F",
             "qualifiation": "FSLC, BA, DIPLOMA"
-        }
+        },
+            "votes": 4096
         },
         {
             "party": "NIP",
@@ -1129,7 +1179,8 @@ const candidateData = {
             "age": 39,
             "gender": "M",
             "qualifiation": "FSLC, WAEC, LLB, BL"
-        }
+        },
+            "votes": 2248
         },
         {
             "party": "NNPP",
@@ -1151,7 +1202,8 @@ const candidateData = {
             "age": 30,
             "gender": "M",
             "qualifiation": "BL"
-        }
+        },
+            "votes": 6111
         },
         {
             "party": "NPC",
@@ -1173,7 +1225,8 @@ const candidateData = {
             "age": 44,
             "gender": "F",
             "qualifiation": "FSLC, SSCE, BL, LLB"
-        }
+        },
+            "votes": 10081
         },
         {
             "party": "NRM",
@@ -1195,7 +1248,8 @@ const candidateData = {
             "age": 45,
             "gender": "M",
             "qualifiation": "BSc, WAEC, MA"
-        }
+        },
+            "votes": 6229
         },
         {
             "party": "NUP",
@@ -1217,7 +1271,8 @@ const candidateData = {
             "age": 46,
             "gender": "M",
             "qualifiation": "FSLC, SSCE, BSc"
-        }
+        },
+            "votes": 5323
         },
         {
             "party": "PCP",
@@ -1239,7 +1294,8 @@ const candidateData = {
             "age": 49,
             "gender": "M",
             "qualifiation": "BSc"
-        }
+        },
+            "votes": 110196
         },
         {
             "party": "PDP",
@@ -1261,7 +1317,8 @@ const candidateData = {
             "age": 57,
             "gender": "M",
             "qualifiation": "FSLC, BA, WAEC"
-        }
+        },
+            "votes": 11262978
         },
         {
             "party": "PPA",
@@ -1283,7 +1340,8 @@ const candidateData = {
             "age": 53,
             "gender": "M",
             "qualifiation": "WASC, BL, LLB"
-        }
+        },
+            "votes": 21822
         },
         {
             "party": "PPC",
@@ -1305,7 +1363,8 @@ const candidateData = {
             "age": 52,
             "gender": "M",
             "qualifiation": "FSLC, SSCE, ND"
-        }
+        },
+            "votes": 8979
         },
         {
             "party": "PPN",
@@ -1327,7 +1386,8 @@ const candidateData = {
             "age": 53,
             "gender": "M",
             "qualifiation": "WASC"
-        }
+        },
+            "votes": 4622
         },
         {
             "party": "PT",
@@ -1349,7 +1409,8 @@ const candidateData = {
             "age": 76,
             "gender": "M",
             "qualifiation": "BA, MA, PHD"
-        }
+        },
+            "votes": 2613
         },
         {
             "party": "RAP",
@@ -1371,7 +1432,8 @@ const candidateData = {
             "age": 31,
             "gender": "M",
             "qualifiation": "MSc"
-        }
+        },
+            "votes": 2972
         },
         {
             "party": "RBNP",
@@ -1393,7 +1455,8 @@ const candidateData = {
             "age": 56,
             "gender": "M",
             "qualifiation": "FSLC, BSc, NCE"
-        }
+        },
+            "votes": 1792
         },
         {
             "party": "RP",
@@ -1415,7 +1478,8 @@ const candidateData = {
             "age": 44,
             "gender": "M",
             "qualifiation": "ND"
-        }
+        },
+            "votes": 2388
         },
         {
             "party": "SDP",
@@ -1437,7 +1501,8 @@ const candidateData = {
             "age": 48,
             "gender": "M",
             "qualifiation": "BSc"
-        }
+        },
+            "votes": 34746
         },
         {
             "party": "SNC",
@@ -1459,7 +1524,8 @@ const candidateData = {
             "age": 54,
             "gender": "F",
             "qualifiation": "FSLC, WAEC, HND"
-        }
+        },
+            "votes": 28680
         },
         {
             "party": "SNP",
@@ -1481,7 +1547,8 @@ const candidateData = {
             "age": 38,
             "gender": "M",
             "qualifiation": "FSLC, WASC, MBA"
-        }
+        },
+            "votes": 3941
         },
         {
             "party": "UDP",
@@ -1503,7 +1570,8 @@ const candidateData = {
             "age": 49,
             "gender": "M",
             "qualifiation": "FSLC, BSc, WAEC, OND"
-        }
+        },
+            "votes": 3170
         },
         {
             "party": "UP",
@@ -1525,7 +1593,8 @@ const candidateData = {
             "age": 72,
             "gender": "M",
             "qualifiation": "FSLC, WASC, HND, MSc"
-        }
+        },
+            "votes": 1561
         },
         {
             "party": "UPN",
@@ -1547,7 +1616,8 @@ const candidateData = {
             "age": 59,
             "gender": "M",
             "qualifiation": "FSLC, WAEC, HND"
-        }
+        },
+            "votes": 1631
         },
         {
             "party": "WTPN",
@@ -1569,7 +1639,8 @@ const candidateData = {
             "age": 58,
             "gender": "M",
             "qualifiation": "PGD, MSc, NDA CERT"
-        }
+        },
+            "votes": 732
         },
         {
             "party": "YES",
@@ -1591,7 +1662,8 @@ const candidateData = {
             "age": 42,
             "gender": "F",
             "qualifiation": "FSLC, WAEC, DIPLOMA"
-        }
+        },
+            "votes": 2394
         },
         {
             "party": "YPP",
@@ -1616,7 +1688,8 @@ const candidateData = {
                 "age": 37,
                 "gender": "F",
                 "qualifiation": "FSLC, SSCE, OND, HND"
-            }
+            },
+            "votes": 21886
         }
         
     ]

@@ -18,7 +18,7 @@ const presidentialSchema = new mongoose.Schema(
             },
             registeredVoters: { type: Number, default: 0},
             accreditedVoters: { type: Number, default: 0},
-            vote: {type: Object, required: true},
+            vote: {type: Array, required: true},
             totalvalidVotes: { type: Number, default: 0},
             rejectedVotes: { type: Number, default: 0},
             totalVotes: { type: Number, default: 0},
