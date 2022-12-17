@@ -9,6 +9,10 @@
   </a>
 
   <p align="center">
+    <a href="https://rapidapi.com/BigYusuf/api/election3">
+      <img src="images/logo.png" alt="Logo" width="80" height="80">
+    </a>
+    <br />
     Nigerian Election API!
     <br />
     <a href="https://github.com/BigYusuf/election"><strong>Explore the docs »</strong></a>
@@ -53,9 +57,9 @@
 
 ## About The Project
 
-[![Desktop Mode][product-screenshot]](https://rapidapi.com/BigYusuf/api/election3)
+[![RapidAPI Url][product-screenshot]](https://rapidapi.com/BigYusuf/api/election3)
 
-As always, All My projects are simple and unique. This one is no exception. I have been wanting to build this project for awhile now, especially when I was learning how to use react.js. I remember searching for an election API then and couldn't get one at the time. I picked Nigeria as country simply because, it is my country and the data is easy to use but its not so easy to get the complete election data.
+As always, All My projects are simple and unique. This one is no exception. I have been wanting to build this project for awhile now, especially when I was learning how to use react.js. I remember searching for an election API then and couldn't get one at the time. I picked Nigeria as country simply because, it is my country and the data is easy to use but its not so easy to get the complete election data. Only Admin an alter or delete the election data.
 
 Benefits of this API:
 
@@ -74,9 +78,10 @@ For now, Only admin can login or register a user, the user endpoints isn't acces
 Here are the list of major frameworks/ libraries used to bootstrap this project
 
 - [Express.js](https://expressjs.org/)
-- [Node.js](https://www.emailjs.com/)
-- [MongoDB](https://firebase.google.com/)
-- [JSON Web Token (JWT)](https://alan.app/)
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.com/)
+- [JSON Web Token (JWT)](https://jwt.io/)
+- [Axios](https://axios-http.com/docs/intro)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -94,7 +99,7 @@ Here are the list of major frameworks/ libraries used to bootstrap this project
 
 [![Mobile][product-screenshot7]](https://rapidapi.com/BigYusuf/api/election3)
 
-#### Main Data Source
+#### Cool RestFul Endpoints
 
 [![Mobile][product-screenshot6]](https://rapidapi.com/BigYusuf/api/election3)
 
@@ -208,7 +213,9 @@ Project Link: [https://github.com/BigYusuf/election](https://github.com/BigYusuf
 Here are the list of resources I find helpful and would like to give credit to.
 
 - [INEC Official Website](https://www.youtube.com)
-- [2019 General Election Wikipedia](https://www.wikipedia.com/)
+- [INEC 2019 Presidential Election](https://www.inecnigeria.org/wp-content/uploads/2019/03/02019-GE-PRESIDENTIAL-ELECTION-RESULTS.pdf)
+- [2019 General Election Wikipedia](https://en.wikipedia.org/wiki/2019_Nigerian_general_election)
+- [2019 General Election BBC News](https://www.bbc.co.uk/news/resources/idt-f0b25208-4a1d-4068-a204-940cbe88d1d3)
 - [Best ReadMe Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -228,10 +235,10 @@ Here are the list of resources I find helpful and would like to give credit to.
 [license-url]: https://github.com/BigYusuf/election/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/bigyusufff
-[product-screenshot]: images/desktopmode.png
-[product-screenshot2]: images/mobilemode.png
+[product-screenshot]: images/rap3.PNG
+[product-screenshot2]: images/mongodbelection.PNG
 [product-screenshot3]: images/emailsample.png
-[product-screenshot4]: images/databasesample.png
+[product-screenshot4]: images/mongodbelection.PNG
 [product-screenshot5]: images/mobilemode2.png
 [product-screenshot6]: images/alanstudio.png
 [product-screenshot7]: images/login.png
